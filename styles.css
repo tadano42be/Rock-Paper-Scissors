@@ -6,7 +6,7 @@
 .wave-text{
     margin: 3rem 0;
 }
-.wave-text,h2, h3,.buttons{
+.wave-text,h2, h3, .navbar{
     margin-left: 3rem;
 }
 
@@ -46,9 +46,18 @@
   
 }
 
+.navbar a {
+  color: inherit;        
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+.navbar{
+  margin-bottom: 3rem;
+}
 button {
   padding: 0.8rem 1rem;
-  background-color: yellow;
+  background-color: hwb(60 67% 2%);
   color: black;
   font-size: 1.2rem;
   border: 0.2rem solid black; 
@@ -61,10 +70,13 @@ button {
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: hwb(60 67% 2%);
 }
 
 button:active {
   transform: translateY(10px); 
   box-shadow: 0 5px 0 #333;
+}
+.rock,.paper,.scissors{
+  margin-left: 3rem;
 }
