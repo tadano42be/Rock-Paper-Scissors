@@ -77,6 +77,18 @@ button:active {
   transform: translateY(10px); 
   box-shadow: 0 5px 0 #333;
 }
-.rock,.paper,.scissors{
+.rock,.paper,.scissors, #winScore, #loseScore{
+  margin-left: 3rem;
+}
+
+.score{
+  display: flex;
+  font-size: 3rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.reset_btn, #resultMessage{
   margin-left: 3rem;
 }
