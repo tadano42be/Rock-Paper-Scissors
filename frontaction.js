@@ -9,7 +9,16 @@ function playGame(userChoice) {
     })
     .then(response => response.json())
     .then(data => {
-        const result = data.result;
+        const result = data.result; 
+        const computer = data.computerChoice; 
+
+        const emojiMap = {
+            rock: '👊',
+            paper: '🖐️',
+            scissors: '✌️'
+        };
+
+        document.getElementById('computerChoice').innerText = `🤖 Computer chose: ${computer.toUpperCase()} ${emojiMap[computer]}`;
 
         if (result === 'win') {
             wins++;
@@ -18,7 +27,7 @@ function playGame(userChoice) {
             losses++;
             document.getElementById('resultMessage').innerText = '😢 You lose!';
         } else {
-            document.getElementById('resultMessage').innerText = "😐 It's a tie!, choose again!";
+            document.getElementById('resultMessage').innerText = "😐 It's a tie!";
         }
 
         document.getElementById('winScore').innerText = `WIN : ${wins}`;
@@ -42,4 +51,5 @@ document.querySelector('.reset_btn button').addEventListener('click', () => {
     document.getElementById('winScore').innerText = 'WIN : 0';
     document.getElementById('loseScore').innerText = 'LOSE : 0';
     document.getElementById('resultMessage').innerText = '';
+    document.getElementById('computerChoice').innerText = ''; 
 });
