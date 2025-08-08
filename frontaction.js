@@ -20,15 +20,14 @@ function playGame(userChoice) {
 
         document.getElementById('computerChoice').innerText = `🤖 Computer chose: ${computer.toUpperCase()} ${emojiMap[computer]}`;
 
+        document.getElementById('resultMessage').innerText = 
+          `You chose: ${userChoice.toUpperCase()} ${emojiMap[userChoice]}, Computer chose: ${computer.toUpperCase()} ${emojiMap[computer]}. You ${result}!`;
+
         if (result === 'win') {
             wins++;
-            document.getElementById('resultMessage').innerText = '🎉 You win!';
         } else if (result === 'lose') {
             losses++;
-            document.getElementById('resultMessage').innerText = '😢 You lose!';
-        } else {
-            document.getElementById('resultMessage').innerText = "😐 It's a tie!";
-        }
+        } 
 
         document.getElementById('winScore').innerText = `WIN : ${wins}`;
         document.getElementById('loseScore').innerText = `LOSE : ${losses}`;
