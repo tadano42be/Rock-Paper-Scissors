@@ -17,7 +17,8 @@ This game allows users to play Rock-Paper-Scissors against a computer opponent d
 - Responsive design for desktop and mobile  
 - Backend logic powered by Python  
 - Hosted on AWS infrastructure  
-- LinkedIn profiles of the creators for networking and inspiration  
+- LinkedIn profiles of the creators for networking and inspiration
+- Tracks wins and losses with a tally function and includes a reset button to clear the score    
 
 ---
 
