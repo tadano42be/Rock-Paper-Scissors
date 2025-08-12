@@ -2,7 +2,7 @@ let wins = 0;
 let losses = 0;
 
 function playGame(userChoice) {
-    fetch('https://q81zpnbwi5.execute-api.us-east-2.amazonaws.com/Production/play', {
+    fetch('https://1szkqbwmvk.execute-api.us-east-1.amazonaws.com/dev/game', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userChoice: userChoice }),
